@@ -12,7 +12,17 @@ function mayoriaDeEdad(edad) {
    // Si tiene 18 años ó más debe retornar el string: "Allowed".
    // Caso contrario: "Not allowed".
    // Tu código:
+   if(edad >= 18){
+      return "Allowed";
+   } else {
+      return "Not allowed";
+   }
 }
+
+console.log(mayoriaDeEdad(25));
+console.log(mayoriaDeEdad(14));
+console.log(mayoriaDeEdad(18));
+
 
 function conection(status) {
    // El argumento "status" representa el estado de conexión de un usuario.
@@ -47,7 +57,18 @@ function esDiezOCinco(num) {
    // Retornar true si "num" es 10 o 5.
    // De lo contrario, retornar false.
    // Tu código:
+   if(num === 10 || num === 5){
+      return true;
+   } else {
+      return false;
+   }
 }
+
+console.log(esDiezOCinco(10));
+console.log(esDiezOCinco(13));
+console.log(esDiezOCinco(27));
+console.log(esDiezOCinco(5));
+
 
 function estaEnRango(num) {
    // Retornar true si "num" es menor que 50 y mayor que 20.

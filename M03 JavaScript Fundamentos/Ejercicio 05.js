@@ -8,23 +8,26 @@ function esPositivo(num) {
    // Si el número es negativo ---> "Es negativo".
    // Si el número es 0, devuelve false.
    // Tu código:
-   if(num > 0)(
-      console.log("Es Positivo")
-   ); else if(num < 0)(
-      console.log("Es Negativo")
-   ); else(num === 0)(
-      console.log("false")
-   )
+   if (num > 0) {
+      return "Es positivo";
+   } else if (num < 0) {
+      return "Es negativo";
+   } else {
+      return false;
+   }
 }
 
-esPositivo(54)
+console.log(esPositivo(54));
+console.log(esPositivo(0));
+console.log(esPositivo(-13));
+
 
 
 function agregarSimboloExclamacion(str) {
    // Agrega un símbolo de exclamación al final del string "str" y retórnalo
    // Ejemplo: "hello world" ---> "hello world!"
    // Tu código:
-    console.log(str + "!")
+    console.log(str + "!");
     return str + "!";
 }
 
@@ -46,8 +49,8 @@ function obtenerSaludo(nombre) {
    // Toma el string "nombre" y concatena otra string en la cadena para que tome la siguiente forma:
    // Ejemplo: "Martin" ---> "Hola Martin!"
    // Tu código:
-   console.log("Hola" + " " + nombre);
-   return "Hola" + " " + nombre;
+   console.log("Hola" + " " + nombre + "!");
+   return "Hola" + " " + nombre + "!";
 }
 
 obtenerSaludo("Ant Man")
@@ -100,16 +103,19 @@ function esVocal(letra) {
    // Si el usuario ingresa un string de más de un caracter debes retornar el mensaje: "Dato incorrecto".
    // Si no es vocal, tambien debe retornar "Dato incorrecto".
    // Tu código:
-   if(letra == ("a","e","i","o","u"))(
-      console.log("Es vocal")
-      ); else if(letra > 2)(
-         console.log("Dato incorrecto")
-   ); else(letra != ("a","e","i","o","u"))(
-      console.log("Dato incorrecto")
-   )
+   if((letra.length == 1) && letra === 'a' || letra === 'e' || letra === 'i' || letra === 'o' || letra === 'u'){
+      return "Es vocal";
+   } else if(letra.length >1){
+      return "Dato incorrecto";
+   } else {
+      return "Dato incorrecto";
+   }
 }
 
-esVocal("a")
+console.log(esVocal("a"));
+console.log(esVocal("Hi"));
+console.log(esVocal("o"));
+console.log(esVocal("ae"));
 
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
