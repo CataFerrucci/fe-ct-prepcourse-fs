@@ -19,15 +19,15 @@ function tienenMismaLongitud(str1, str2) {
    // Retorna true si los dos strings tienen la misma longitud.
    // De lo contrario, retorna false.
    // Tu código:
-   if(str1 === str2){
+   if(str1.length === str2.length){
       return true;
    } else {
       return false;
    }
 }
 
-console.log(tienenMismaLongitud(50,50));
-console.log(tienenMismaLongitud(30,50));
+console.log(tienenMismaLongitud("vacaciones", "abcdefghij"));
+console.log(tienenMismaLongitud("Londres", "Budapest"));
 
 
 function menosQueNoventa(num) {

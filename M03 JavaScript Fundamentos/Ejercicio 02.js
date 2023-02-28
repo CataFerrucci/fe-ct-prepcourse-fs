@@ -7,7 +7,7 @@ function devolverString(string) {
    return string;
 }
 
-devolverString("computadora");
+console.log(devolverString("computadora"));
 
 
 // ⛔️ "X" e "Y" son números.
@@ -18,7 +18,7 @@ function suma(x, y) {
    return x + y;
 }
 
-suma (5,3)
+console.log(suma (5,3));
 
 
 function resta(x, y) {
@@ -27,7 +27,7 @@ function resta(x, y) {
    return x - y;
 }
 
-resta(11,4)
+console.log(resta(11,4));
    
 
 function divide(x, y) {
@@ -36,7 +36,7 @@ function divide(x, y) {
    return x / y;
 }
 
-divide(22,2)
+console.log(divide(22,2));
 
 
 function multiplica(x, y) {
@@ -45,7 +45,7 @@ function multiplica(x, y) {
    return x * y;
 }
 
-multiplica(32,8)
+console.log(multiplica(32,8));
 
 
 function obtenerResto(x, y) {
@@ -54,7 +54,7 @@ function obtenerResto(x, y) {
    return x % y;
 }
 
-obtenerResto(21,5)
+console.log(obtenerResto(21,5));
 
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
